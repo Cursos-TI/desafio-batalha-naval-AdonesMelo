@@ -10,16 +10,18 @@ int main() {
     // Sugestão: Posicione dois navios no tabuleiro, um verticalmente e outro horizontalmente.
     // Sugestão: Utilize `printf` para exibir as coordenadas de cada parte dos navios.
     int tabuleiro[10][10] = {0};
+    int linha = 3; 
+    int coluna = 8; 
 
     // Posiciona o número 3 na linha 3 (índice 2) nas colunas D, E, F (índices 3, 4, 5)
     // Posição horizontal
     for (int i = 3; i <= 5; i++)
-        tabuleiro[2][i] = 3;
+        tabuleiro[linha - 1][i] = 3;
 
     // Posiciona o número 3 na coluna H (índice 7) nas linhas 6, 7, 8 (índices 5, 6, 7)
     // Pocição vertical
     for (int j = 5; j <= 7; j++)
-        tabuleiro[j][7] = 3;
+        tabuleiro[j][coluna - 1] = 3;
 
     printf("##### Jogo de Batalha Naval #####\n");
     printf("\n");
